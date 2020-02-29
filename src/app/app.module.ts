@@ -12,6 +12,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { HomePageShopComponent } from './components/home-page-shop/home-page-shop.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomePageShopComponent } from './components/home-page-shop/home-page-sho
     SupportPopUpComponent,
     ProductsListComponent,
     HomePageHeaderComponent,
-    HomePageShopComponent
+    HomePageShopComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
