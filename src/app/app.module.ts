@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
+import { HomePageShopComponent } from './components/home-page-shop/home-page-shop.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MatBadgeModule } from '@angular/material/badge';
     HomePageComponent,
     SupportPopUpComponent,
     ProductsListComponent,
-    HomePageHeaderComponent
+    HomePageHeaderComponent,
+    HomePageShopComponent
   ],
   imports: [
     BrowserModule,
