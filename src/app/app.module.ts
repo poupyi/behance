@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
 import { HomePageShopComponent } from './components/home-page-shop/home-page-shop.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { HomePageIndoorOutdoorComponent } from './components/home-page-indoor-outdoor/home-page-indoor-outdoor.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     HomePageHeaderComponent,
     HomePageShopComponent,
     CarouselComponent,
+    HomePageIndoorOutdoorComponent,
   ],
   imports: [
     BrowserModule,
