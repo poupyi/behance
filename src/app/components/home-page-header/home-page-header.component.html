@@ -1,0 +1,25 @@
+<div class="header-container">
+    <div class="header-lead-buttons">
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="header-menu-button">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>home</mat-icon>
+                <span>Home</span>
+            </button>
+            <button mat-menu-item disabled>
+                <mat-icon>view_list</mat-icon>
+                <span>Products</span>
+            </button>
+        </mat-menu>
+    </div>
+    <div class="header-home-title">minim</div>
+    <div class="header-trail-buttons">
+        <div>account</div>
+        <div>
+            <mat-icon matBadge="4">folder_open</mat-icon>
+        </div>
+    </div>
+</div>
+
