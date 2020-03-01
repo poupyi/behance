@@ -14,6 +14,8 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { HomePageShopComponent } from './components/home-page-shop/home-page-shop.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomePageIndoorOutdoorComponent } from './components/home-page-indoor-outdoor/home-page-indoor-outdoor.component';
+import { HomePagePopularComponent } from './components/home-page-popular/home-page-popular.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { HomePageIndoorOutdoorComponent } from './components/home-page-indoor-ou
     HomePageShopComponent,
     CarouselComponent,
     HomePageIndoorOutdoorComponent,
+    HomePagePopularComponent,
+    ProductCardComponent,
   ],
   imports: [
     BrowserModule,

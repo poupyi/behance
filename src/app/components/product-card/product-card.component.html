@@ -1,0 +1,11 @@
+<div class="product-card-container">
+    <div class="product-card-image" [ngStyle]="getBackgroundStyle()">
+        <div *ngIf="product.isItemHot" class="product-is-hot">HOT</div>
+        <img src="{{product.imageUrl}}" width="150"  height="120"/>
+    </div>
+    <div class="product-titles">
+        <div>{{product.itemName}}</div>
+        <div>{{product.creator}}</div>
+    </div>
+    <div class="product-price">{{product.price.toFixed(2)}}$</div>
+</div>

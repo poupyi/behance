@@ -1,0 +1,20 @@
+<div class="popular-container">
+    <div class="popular-header">
+        <div class="popular-titles">
+            <div>Popular</div>
+            <div>Shop</div>
+        </div>
+        <div class="popular-pagination">
+            <div>Previous</div>
+            <div>Next</div>
+        </div>
+    </div>
+    <div class="popular-items-list">
+        <div
+            class="popular-item-container"
+            *ngFor="let item of items"
+        >
+            <app-product-card [product]="item"></app-product-card>
+        </div>
+    </div>
+</div>
