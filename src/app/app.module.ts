@@ -19,6 +19,7 @@ import { HomePagePopularComponent } from './components/home-page-popular/home-pa
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatMenuModule,
     MatIconModule,
     MatBadgeModule,

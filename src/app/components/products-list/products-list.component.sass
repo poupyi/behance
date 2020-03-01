@@ -1,0 +1,87 @@
+$greyish: #918d8e
+
+#product-list-container
+    display: flex
+    flex-direction: column
+    width: 1280px
+
+    #product-list-header
+        display: flex
+
+        > *
+            font-size: 16px
+            font-weight: 500
+
+        #product-list-title
+            align-self: flex-start
+            flex-grow: 7
+
+        #product-list-sort-by
+            display: flex
+            align-self: flex-end
+            flex-grow: 1
+            
+            > div
+                flex-grow: 1
+                text-align: center
+
+                &:not(:first-child)
+                    cursor: pointer
+
+                &:last-child
+                    border-left: 1px black solid
+    
+    #product-list-filters
+        padding: 100px 40px 0px 40px
+        display: flex
+
+        > div
+            flex-grow: 1
+
+        #product-list-filters-title
+            font-size: 24px
+            font-weight: 600
+
+        .product-list-filter
+            cursor: pointer
+            font-size: 16px
+
+            > div
+                font-weight: 500
+
+            > span
+                font-weight: 600
+                color: $greyish
+                
+        #product-list-filter-by
+            font-size: 18px
+            font-weight: 500
+            flex-grow: 10
+            display: flex
+            justify-content: flex-end
+
+            > input
+                margin-left: 20px
+
+    #product-list-table
+        display: flex
+        flex-wrap: wrap
+        margin-top: 80px
+
+        .product-list-item
+            padding: 20px 40px 20px 35px
+
+    #product-list-pagination
+        display: flex
+        justify-content: space-between
+        margin-top: 150px
+
+        > div
+            font-size: 20px
+            font-weight: 500
+            cursor: pointer    
+            
+            &:nth-child(2)
+                cursor: initial 
+                
+                

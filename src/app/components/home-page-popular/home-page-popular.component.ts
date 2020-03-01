@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductCard } from "../../models/product-card";
+import { ProductCard } from '../../models/product-card';
+import { ProductsService } from '../../services/products.service';
 
 @Component({
   selector: 'app-home-page-popular',
@@ -8,62 +9,14 @@ import { ProductCard } from "../../models/product-card";
 })
 export class HomePagePopularComponent implements OnInit {
 
-  items: ProductCard[] = [
-    {
-      imageUrl: 'assets/sphere.png',
-      isItemHot: false,
-      itemName: 'Picklesuit',
-      creator: 'John Doelson',
-      price: 155.00,
-      backgroundColor: '#efebec'
-    }, {
-      imageUrl: 'assets/sphere.png',
-      isItemHot: true,
-      itemName: 'Picklesuit',
-      creator: 'John Doelson',
-      price: 155.00,
-      backgroundColor: '#f0f0f0'
-    }, {
-      imageUrl: 'assets/sphere.png',
-      isItemHot: false,
-      itemName: 'Picklesuit',
-      creator: 'John Doelson',
-      price: 155.00,
-      backgroundColor: '#c0dbe9'
-    }, {
-      imageUrl: 'assets/sphere.png',
-      isItemHot: false,
-      itemName: 'Picklesuit',
-      creator: 'John Doelson',
-      price: 155.00,
-      backgroundColor: '#efebec'
-    }, {
-      imageUrl: 'assets/sphere.png',
-      isItemHot: false,
-      itemName: 'Picklesuit',
-      creator: 'John Doelson',
-      price: 155.00,
-      backgroundColor: '#f0f0f0'
-    }, {
-      imageUrl: 'assets/sphere.png',
-      isItemHot: false,
-      itemName: 'Picklesuit',
-      creator: 'John Doelson',
-      price: 155.00,
-      backgroundColor: '#c0dbe9'
-    }, {
-      imageUrl: 'assets/sphere.png',
-      isItemHot: true,
-      itemName: 'Picklesuit',
-      creator: 'John Doelson',
-      price: 155.00,
-      backgroundColor: '#efebec'
-    },
-  ]
+  items: ProductCard[];
 
-  constructor() { }
+  constructor(private productsService: ProductsService) { }
 
   ngOnInit(): void {
+    this.productsService.getProducts().subscribe(products => {
+        this.items = products;
+    });
   }
 
 }
