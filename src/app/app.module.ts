@@ -17,6 +17,7 @@ import { HomePageIndoorOutdoorComponent } from './components/home-page-indoor-ou
 import { HomePagePopularComponent } from './components/home-page-popular/home-page-popular.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { NewsletterComponent } from './components/newsletter/newsletter.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { NewsletterComponent } from './components/newsletter/newsletter.componen
     HomePagePopularComponent,
     ProductCardComponent,
     NewsletterComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
