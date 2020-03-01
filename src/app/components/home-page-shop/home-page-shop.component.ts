@@ -5,23 +5,23 @@ const homeFurnishingsItems: CarouselItem[] = [
   {
     edition: 'Limited',
     id: 0,
-    imageUrl: 'https://cdn20.pamono.com/p/g/5/3/534020_ki092tdg2q/zebrano-wood-and-goatskin-dining-table-1950s-6.jpg',
-    name: 'Wooden Dining Table',
+    imageUrl: 'https://www.homecrux.com/wp-content/uploads/2017/09/Best-switch-designs.jpg',
+    name: 'Designer Light',
     version: '1.0'
   },
   {
     edition: 'Exclusive',
     id: 1,
-    imageUrl: 'https://www.ztijl.com/wp-content/uploads/2019/12/The-Wooden-Chair-by-Marc-Newson-for-Cappellini-1990s-3.jpg',
-    name: 'Wooden Design Chair',
-    version: '1.0'
+    imageUrl: 'https://www.homecrux.com/wp-content/uploads/2017/09/Best-switch-designs.jpg',
+    name: 'Designer Light',
+    version: '2.0'
   },
   {
-    edition: 'Limited',
+    edition: 'No tomorrow',
     id: 2,
     imageUrl: 'https://www.homecrux.com/wp-content/uploads/2017/09/Best-switch-designs.jpg',
     name: 'Designer Light',
-    version: '1.0'
+    version: '3.0'
   }
 ];
 
