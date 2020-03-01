@@ -16,6 +16,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomePageIndoorOutdoorComponent } from './components/home-page-indoor-outdoor/home-page-indoor-outdoor.component';
 import { HomePagePopularComponent } from './components/home-page-popular/home-page-popular.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { NewsletterComponent } from './components/newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
     HomePageIndoorOutdoorComponent,
     HomePagePopularComponent,
     ProductCardComponent,
+    NewsletterComponent,
   ],
   imports: [
     BrowserModule,
