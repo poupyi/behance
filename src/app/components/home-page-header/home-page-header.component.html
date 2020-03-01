@@ -8,9 +8,13 @@
                 <mat-icon>home</mat-icon>
                 <span>Home</span>
             </button>
-            <button mat-menu-item disabled>
+            <button mat-menu-item>
                 <mat-icon>view_list</mat-icon>
                 <span>Products</span>
+            </button>
+            <button mat-menu-item (click)="displayPopUp()">
+                <mat-icon>phone</mat-icon>
+                <span>Help</span>
             </button>
         </mat-menu>
     </div>

@@ -1,0 +1,60 @@
+$greyish: #918d8e
+
+#pop-up-container
+    background-color: white
+    padding: 20px
+    display: flex
+    flex-direction: column
+    width: 1000px
+    height: 400px
+
+    #pop-up-close-button
+        align-self: flex-end
+        cursor: pointer
+        height: 25px
+        &:hover
+            background-color: $greyish
+
+    #pop-up-contents
+        display: flex
+        flex-grow: 1
+        align-items: center
+
+        #pop-up-image
+            padding: 0px 100px 0px 50px
+        
+        #pop-up-texts
+            display: flex
+            flex-direction: column
+            align-self: flex-start
+            padding: 70px 70px 0px 40px
+
+            #pop-up-title
+                font-size: 26px
+                font-weight: 600
+                margin-bottom: 40px
+
+            #pop-up-description
+                color: $greyish
+
+            #pop-up-buttons
+                margin-top: 80px
+                display: flex
+                justify-content: space-between
+
+                > div
+                    display: flex
+                    font-size: 16px
+                    font-weight: 500
+                    height: 40px
+                    width: 152px
+                    align-items: center
+                    justify-content: center
+                    cursor: pointer
+
+                #pop-up-start-chat-button
+                    background-color: black
+                    color: white
+
+                #pop-up-call-back-button
+                    border-bottom: 1px solid black

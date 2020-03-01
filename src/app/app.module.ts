@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatDialogModule } from '@angular/material/dialog';
 import { HomePageShopComponent } from './components/home-page-shop/home-page-shop.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { HomePageIndoorOutdoorComponent } from './components/home-page-indoor-outdoor/home-page-indoor-outdoor.component';
@@ -32,7 +33,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HomePagePopularComponent,
     ProductCardComponent,
     NewsletterComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserAnimationsModule,
     MatMenuModule,
     MatIconModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
