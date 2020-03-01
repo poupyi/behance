@@ -14,7 +14,7 @@ export class HomePagePopularComponent implements OnInit {
   constructor(private productsService: ProductsService) { }
 
   ngOnInit(): void {
-    this.productsService.getProducts().subscribe(products => {
+    this.productsService.getPopularProducts().subscribe(products => {
         this.items = products;
     });
   }

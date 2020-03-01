@@ -19,14 +19,14 @@
     <div id="product-list-table">
         <div
             class="product-list-item"
-            *ngFor="let item of items"
+            *ngFor="let item of displayableItems"
         >
             <app-product-card [product]="item"></app-product-card>
         </div>
     </div>
     <div id="product-list-pagination">
-        <div>Previous</div>
-        <div>1/2</div>
-        <div>Next</div>
+        <div (click)="goToPreviousPage()">Previous</div>
+        <div>{{currentPage}}/{{totalPage}}</div>
+        <div (click)="goToNextPage()">Next</div>
     </div>
 </div>
