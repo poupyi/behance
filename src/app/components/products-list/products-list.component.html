@@ -9,11 +9,13 @@
     </div>
     <div id="product-list-filters">
         <div id="product-list-filters-title">Home Decor</div>
-        <div class="product-list-filter"><span>X</span> Kitchen</div>
-        <div class="product-list-filter"><span>X</span> Decor</div>
+        <div *ngFor="let filter of filters" class="product-list-filter" (click)="removeFilter(filter)">
+            <span>X</span>{{filter}}
+        </div>
         <div id="product-list-filter-by">
             filter by
-            <input placeholder="name / designer / price" />
+            <input [(ngModel)]="filter" placeholder="name / designer / price" />
+            <button (click)="submitFilter()">Submit</button>
         </div>
     </div>
     <div id="product-list-table">

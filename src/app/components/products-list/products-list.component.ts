@@ -14,6 +14,8 @@ export class ProductsListComponent implements OnInit {
   displayableItems: ProductCard[];
   currentPage = 1;
   totalPage: number;
+  filters: string[] = [];
+  filter: string;
 
   constructor(private productsService: ProductsService) { }
 
@@ -23,6 +25,28 @@ export class ProductsListComponent implements OnInit {
         this.totalPage = Math.max(Math.ceil(this.fullItems.length / displayableItemsLength), 1);
         this.displayableItems = this.fullItems.slice(0, displayableItemsLength);
     });
+  }
+
+  fetchProducts() {
+    this.productsService.getProductsByFilters(this.filters).subscribe(products => {
+      this.fullItems = products;
+      this.currentPage = 1;
+      this.totalPage = Math.max(Math.ceil(this.fullItems.length / displayableItemsLength), 1);
+      this.displayableItems = this.fullItems.slice(0, displayableItemsLength);
+    });
+  }
+
+  submitFilter() {
+    if (this.filter != undefined && !this.filters.includes(this.filter)) {
+      this.filters.push(this.filter);
+      this.fetchProducts();
+    }
+    this.filter = undefined;
+  }
+
+  removeFilter(filter: string) {
+    this.filters = this.filters.filter(x => x !== filter);
+    this.fetchProducts();
   }
 
   goToPreviousPage() {

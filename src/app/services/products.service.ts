@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { ProductCard } from '../models/product-card';
 import { Observable }  from 'rxjs'
 
@@ -19,5 +19,14 @@ export class ProductsService {
 
   getProducts(): Observable<ProductCard[]> {
     return this.http.get<ProductCard[]>(this.url + this.productPath);
+  }
+
+  getProductsByFilters(filters: string[]): Observable<ProductCard[]> {
+    if (filters.length > 0) {
+      const params = new HttpParams().set('filters',  filters.join(','));
+      return this.http.get<ProductCard[]>(this.url + this.productPath + '/filters', { params: params });
+    } else {
+      return this.http.get<ProductCard[]>(this.url + this.productPath + '/filters');
+    }
   }
 }

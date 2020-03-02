@@ -175,6 +175,23 @@ app.get('/products/popular', (req, res) => {
   res.send(items);
 });
 
+app.get('/products/filters', (req, res) => {
+  let finalItems = items.concat(items2).concat(items3);
+  if (req.query.filters != undefined && req.query.filters.length > 0) {
+    const filters = req.query.filters.split(',');
+    finalItems = finalItems.filter(item => {
+      let hasFilter = false;
+      Object.keys(item).forEach(key => {
+        if (filters.includes(item[key])) {
+          hasFilter = true;
+        }
+      });
+      return hasFilter;
+    });
+  }
+  res.send(finalItems);
+});
+
 app.listen("8080", () => {
   console.log("Server Started, listening on localhost:8080");
 });
