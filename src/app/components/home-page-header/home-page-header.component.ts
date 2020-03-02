@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { SupportPopUpComponent } from '../support-pop-up/support-pop-up.component';
 
 @Component({
   selector: 'app-home-page-header',
@@ -9,12 +7,8 @@ import { SupportPopUpComponent } from '../support-pop-up/support-pop-up.componen
 })
 export class HomePageHeaderComponent implements OnInit {
 
-  constructor(private dialog: MatDialog) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  displayPopUp() {
-    this.dialog.open(SupportPopUpComponent);
   }
 }

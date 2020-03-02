@@ -21,6 +21,7 @@ import { NewsletterComponent } from './components/newsletter/newsletter.componen
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
+import { NavigationMenuComponent } from './components/navigation-menu/navigation-menu.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FormsModule } from "@angular/forms";
     HomePagePopularComponent,
     ProductCardComponent,
     NewsletterComponent,
-    FooterComponent
+    FooterComponent,
+    NavigationMenuComponent
   ],
   imports: [
     BrowserModule,
