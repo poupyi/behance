@@ -1,6 +1,6 @@
 <div id="product-list-page-header">
-    <div></div>    
-    <div></div>    
+    <app-navigation-menu></app-navigation-menu>
+    <mat-icon>search</mat-icon>  
 </div>
 <div id="product-list-container">
     <div id="product-list-header">
@@ -18,7 +18,7 @@
         </div>
         <div id="product-list-filter-by">
             filter by
-            <input [(ngModel)]="filter" placeholder="name / designer / price" />
+            <input [(ngModel)]="filter" placeholder="name | designer" />
             <button (click)="submitFilter()">Submit</button>
         </div>
     </div>

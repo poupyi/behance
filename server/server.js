@@ -28,7 +28,7 @@ const items = [
     imageUrl: 'assets/sphere.png',
     isItemHot: false,
     itemName: 'Picklesuit',
-    creator: 'John Doelson',
+    creator: 'Patrick',
     price: 155.00,
     backgroundColor: '#efebec'
   }, {
@@ -113,7 +113,7 @@ const items3 = [
     imageUrl: 'assets/sphere.png',
     isItemHot: false,
     itemName: 'Picklesuit3',
-    creator: 'John Doelson',
+    creator: 'Patrick',
     price: 155.00,
     backgroundColor: '#efebec'
   }, {
@@ -148,7 +148,7 @@ const items3 = [
     imageUrl: 'assets/sphere.png',
     isItemHot: false,
     itemName: 'Picklesuit3',
-    creator: 'John Doelson',
+    creator: 'Patrick',
     price: 155.00,
     backgroundColor: '#c0dbe9'
   }, {

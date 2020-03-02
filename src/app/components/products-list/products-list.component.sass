@@ -1,9 +1,18 @@
 $greyish: #918d8e
 
+#product-list-page-header
+    display: flex
+    justify-content: space-between
+
+    > mat-icon
+        cursor: pointer
+        font-size: 30px
+
 #product-list-container
     display: flex
     flex-direction: column
     width: 1280px
+    margin-top: 100px
 
     #product-list-header
         display: flex
@@ -30,6 +39,7 @@ $greyish: #918d8e
 
                 &:last-child
                     border-left: 1px black solid
+                    margin-right: -22px
     
     #product-list-filters
         padding: 100px 40px 0px 40px
@@ -52,6 +62,7 @@ $greyish: #918d8e
             > span
                 font-weight: 600
                 color: $greyish
+                margin-right: 10px
                 
         #product-list-filter-by
             font-size: 18px
