@@ -22,6 +22,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from "@angular/forms";
 import { NavigationMenuComponent } from './components/navigation-menu/navigation-menu.component';
+import { HomePageCollectionsComponent } from './components/home-page-collections/home-page-collections.component';
+import { HomePageShopHeaderComponent } from './components/home-page-shop-header/home-page-shop-header.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { NavigationMenuComponent } from './components/navigation-menu/navigation
     ProductCardComponent,
     NewsletterComponent,
     FooterComponent,
-    NavigationMenuComponent
+    NavigationMenuComponent,
+    HomePageCollectionsComponent,
+    HomePageShopHeaderComponent
   ],
   imports: [
     BrowserModule,
