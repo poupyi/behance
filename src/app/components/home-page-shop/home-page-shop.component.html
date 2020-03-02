@@ -1,8 +1,8 @@
-<div class="home-page-shop-container">
-    <div class="home-page-shop-categories-container">
-        <span class="home-page-shop-title">Shop</span>
-        <div class="home-page-shop-vertical-spacing"></div>
-        <div class="home-page-shop-categories">
+<div id="home-page-shop-container">
+    <div id="home-page-shop-categories-container">
+        <span id="home-page-shop-title">Shop</span>
+        <div id="home-page-shop-vertical-spacing"></div>
+        <div id="home-page-shop-categories">
             <a class="home-page-shop-category" *ngFor="let category of categories"
                 [ngClass]="getCategorySelectedClass(category)"
                 (click)="handleCategoryClick(category)"
@@ -11,7 +11,7 @@
             </a>
         </div>
     </div>
-    <div class="home-page-shop-carousel">
+    <div id="home-page-shop-carousel">
         <app-carousel [items]="selectedItems"></app-carousel>
     </div>
 </div>
