@@ -1,16 +1,18 @@
 <div id="carousel">
-    <div id="carousel-left-tile">
+    <div id="carousel-upper-tile">
         <img src="{{selectedItem.imageUrl}}" width="500" height="350" />
+        <div>
+            <span id="item-version">{{selectedItem.version}}</span>
+            <span id="item-edition">{{selectedItem.edition}} edition</span>
+            <span id="item-name">{{selectedItem.name}}</span>
+        </div>
+    </div>
+    <div id="carousel-lower-tile">
         <div id="carousel-pagination">
             <span class="pagination-circle" *ngFor="let item of items" [ngClass]="getPaginationClass(item)"
                 (click)="selectItem(item)">
             </span>
         </div>
-    </div>
-    <div id="carousel-right-tile">
-        <span id="item-version">{{selectedItem.version}}</span>
-        <span id="item-edition">{{selectedItem.edition}} edition</span>
-        <span id="item-name">{{selectedItem.name}}</span>
         <div id="shop-button">
             Shop Now
         </div>

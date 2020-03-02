@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ProductCard } from '../../models/product-card';
+import { ProductsService } from '../../services/products.service';
+
 @Component({
   selector: 'app-home-page-collections',
   templateUrl: './home-page-collections.component.html',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageCollectionsComponent implements OnInit {
 
-  constructor() { }
+  items: ProductCard[];
+
+  constructor(private productsService: ProductsService) { }
 
   ngOnInit(): void {
+    this.productsService.getPopularProducts().subscribe(products => {
+        this.items = products.slice(0, 2);
+    });
   }
 
 }
