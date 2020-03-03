@@ -9,6 +9,31 @@
                 See all collections
             </div>
         </div>
-        <app-product-card [product]="items[0]"></app-product-card>
+        <div class="home-page-collections-item">
+            <img src="{{items[0].imageUrl}}" width="400" height="300" />
+            <div>
+                <span id="item-version">{{items[0].version}}</span>
+                <span id="item-edition">{{items[0].edition}} edition</span>
+                <span id="item-name">{{items[0].name}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="home-page-collections-row">
+        <div class="home-page-collections-item">
+            <img src="{{items[1].imageUrl}}" width="400" height="300" />
+            <div>
+                <span id="item-version">{{items[1].version}}</span>
+                <span id="item-edition">{{items[1].edition}} edition</span>
+                <span id="item-name">{{items[1].name}}</span>
+            </div>
+        </div>
+        <div class="home-page-collections-item">
+            <img src="{{items[2].imageUrl}}" width="400" height="300" />
+            <div>
+                <span id="item-version">{{items[2].version}}</span>
+                <span id="item-edition">{{items[2].edition}} edition</span>
+                <span id="item-name">{{items[2].name}}</span>
+            </div>
+        </div>
     </div>
 </div>

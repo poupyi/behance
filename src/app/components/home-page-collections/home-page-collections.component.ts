@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
-import { ProductCard } from '../../models/product-card';
 import { ProductsService } from '../../services/products.service';
+import { homeFurnishingsItems } from '../home-page-shop/home-page-shop.component';
+import { CarouselItem } from '../../models/carousel-item';
 
 @Component({
   selector: 'app-home-page-collections',
@@ -10,14 +10,12 @@ import { ProductsService } from '../../services/products.service';
 })
 export class HomePageCollectionsComponent implements OnInit {
 
-  items: ProductCard[];
+  items: CarouselItem[];
 
   constructor(private productsService: ProductsService) { }
 
   ngOnInit(): void {
-    this.productsService.getPopularProducts().subscribe(products => {
-        this.items = products.slice(0, 2);
-    });
+        this.items = homeFurnishingsItems;
   }
 
 }

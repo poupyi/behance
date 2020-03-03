@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CarouselItem } from '../../models/carousel-item';
 
-const homeFurnishingsItems: CarouselItem[] = [
+export const homeFurnishingsItems: CarouselItem[] = [
   {
     edition: 'Limited',
     id: 0,

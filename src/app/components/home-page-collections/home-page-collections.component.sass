@@ -10,6 +10,9 @@
         display: flex
         flex-grow: 1
 
+        app-product-card
+            flex-grow: 10
+
         #home-page-collections-description
             width: 300px
 
@@ -17,11 +20,45 @@
                 font-size: 14px
 
             > div
-                margin-top: 50px
+                margin-top: 130px
                 width: fit-content
                 border-bottom: 1px solid black
                 font-size: 16px
                 font-weight: 500
 
-        app-product-card
-            flex-grow: 10
+        .home-page-collections-item
+            display: flex
+            flex-grow: 1
+            height: 300px
+            justify-content: space-around
+
+            > img
+                margin-left: 50px
+
+            > div   
+                display: flex
+                flex-direction: column
+
+                #item-version
+                    flex-grow: 5
+                    font-weight: 600
+
+                #item-edition
+                    flex-grow: 1
+                    color: #bbbabb
+
+
+                #item-name
+                    font-size: 24px
+                    font-weight: 600
+                    flex-grow: 10
+
+        &:last-child
+            margin-top: 100px
+
+            .home-page-collections-item
+                &:last-child
+                    margin-top: 200px
+
+
+
